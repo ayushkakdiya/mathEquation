@@ -5,7 +5,6 @@
 //  Created by R90 on 06/01/17.
 //
 
-
 import UIKit
 
 class GameLavelViewController: UIViewController {
@@ -15,17 +14,13 @@ class GameLavelViewController: UIViewController {
     @IBOutlet weak var easyButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
     }
     
-   
     @IBAction func easyButtonAction(_ sender: UIButton) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let easyLevalViewController: EasyLevalViewController = storyBoard.instantiateViewController(withIdentifier: "EasyLevalViewController") as! EasyLevalViewController
         self.navigationController?.pushViewController(easyLevalViewController, animated: true)
     }
-    
     
     @IBAction func meduimButtonAction(_ sender: UIButton) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)

@@ -43,7 +43,7 @@ class EasyLevalViewController: UIViewController {
         
     }
     private func setUp() {
-//        configureTimer()
+        //        configureTimer()
         setUpProgrssBar()
     }
     
@@ -88,24 +88,24 @@ class EasyLevalViewController: UIViewController {
         wrongButton.setTitle(currentQuestion?.answer[1], for: .normal)
     }
     
-//    private func configureTimer() {
-//          timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updetTIme) , userInfo: nil, repeats: true)
-//    }
-//    @objc
-
-//    func updetTIme() {
-//        if timerCount > 0 {
-//            timerCount = timerCount-1
-//            EasyLevalProgressBar.setProgress(Float(timerCount)/11, animated: true)
-//        } else {
-//            timer.invalidate()
-//        }
-//
-//        if timerCount == 0 {
-//            displayValidation()
-//        }
-//    }
-
+    //    private func configureTimer() {
+    //          timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updetTIme) , userInfo: nil, repeats: true)
+    //    }
+    //    @objc
+    
+    //    func updetTIme() {
+    //        if timerCount > 0 {
+    //            timerCount = timerCount-1
+    //            EasyLevalProgressBar.setProgress(Float(timerCount)/11, animated: true)
+    //        } else {
+    //            timer.invalidate()
+    //        }
+    //
+    //        if timerCount == 0 {
+    //            displayValidation()
+    //        }
+    //    }
+    
     func setUpProgrssBar() {
         self.EasyLevalProgressBar.setProgress(5, animated: false)
         DispatchQueue.global().async {
@@ -118,7 +118,7 @@ class EasyLevalViewController: UIViewController {
             }
         }
     }
-
+    
     func displayValidation() {
         let alert: UIAlertController = UIAlertController(title: "Game Over\n", message: "Your Total score: \(score)", preferredStyle: .alert)
         let playAgainButton: UIAlertAction = UIAlertAction(title: "Play Again", style: .default) { button in }

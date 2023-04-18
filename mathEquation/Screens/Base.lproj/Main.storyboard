@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G4V-ly-23D">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G4V-ly-23D">
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,11 +34,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Image" highlightedImage=" " translatesAutoresizingMaskIntoConstraints="NO" id="zjB-pf-YUq">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <rect key="frame" x="0.0" y="-4" width="430" height="940"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDR-JS-kan">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDR-JS-kan">
                                 <rect key="frame" x="140" y="673" width="140" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Play">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
@@ -52,10 +51,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="zjB-pf-YUq" secondAttribute="bottom" id="633-cy-a50"/>
-                            <constraint firstItem="zjB-pf-YUq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="92c-AB-Dc5"/>
-                            <constraint firstItem="zjB-pf-YUq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HbP-RX-Bmd"/>
-                            <constraint firstItem="zjB-pf-YUq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hfl-Ug-qJ5"/>
+                            <constraint firstItem="CDR-JS-kan" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="07F-ax-Isu"/>
+                            <constraint firstItem="zjB-pf-YUq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5B4-o9-Mwo"/>
+                            <constraint firstItem="zjB-pf-YUq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-4" id="7Db-KW-nDQ"/>
+                            <constraint firstItem="CDR-JS-kan" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="570" id="8dm-a7-s5n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CDR-JS-kan" secondAttribute="trailing" constant="150" id="IE0-Gq-bt6"/>
+                            <constraint firstAttribute="bottom" secondItem="zjB-pf-YUq" secondAttribute="bottom" constant="-4" id="KcF-Li-s1A"/>
+                            <constraint firstItem="zjB-pf-YUq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eLe-9i-9AG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CDR-JS-kan" secondAttribute="bottom" constant="172" id="nwE-OU-3P5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uDb-0P-QSF"/>
